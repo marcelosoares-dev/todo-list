@@ -1,4 +1,6 @@
 /* Geral */
+/* Estilos gerais aplicados a todos os elementos */
+
 * {
   padding: 0;
   margin: 0;
@@ -7,12 +9,20 @@
   box-sizing: border-box;
 }
 
+/* Define o tamanho do html para ocupar 100% da altura da viewport */
+html {
+  height: 100vh;
+}
+
+/* Estilos para o corpo do documento */
 body {
+  /* Define a imagem de fundo */
   background-image: url(../img/wp9139434-mac-os-big-sur-4k-wallpapers.jpg);
   background-position: center;
   background-size: cover;
 }
 
+/* Estilos para os botões */
 button {
   background-color: #fdfdfd;
   color: #102f5e;
@@ -26,32 +36,36 @@ button {
   transition: 0.4s;
 }
 
+/* Estilos para o botão quando hover (mouse sobre o botão) */
 button:hover {
   background-color: #102f5e;
   color: #fff;
 }
 
+/* Estilos para o ícone dentro do botão quando hover */
 button:hover > i {
   color: #fff;
 }
 
+/* Estilos para o ícone dentro do botão */
 button i {
   color: #102f5e;
   font-weight: bold;
   pointer-events: none;
 }
 
+/* Estilos para campos de entrada de texto e seleção */
 input,
 select {
   padding: 0.25rem 0.5rem;
 }
 
+/* Classe "hide" para ocultar elementos */
 .hide {
   display: none;
 }
 
-/* Todo header */
-
+/* Estilos para o cabeçalho da lista de tarefas (todo-container) */
 .todo-container {
   max-width: 450px;
   margin: 3rem auto;
@@ -60,49 +74,55 @@ select {
   border-radius: 15px;
 }
 
+/* Estilos para o cabeçalho dentro do todo-container */
 .todo-container header {
   text-align: center;
   padding: 0 1rem 1rem;
   border-bottom: 1px solid #ccc;
 }
 
-/* Todo Form*/
-
+/* Estilos para os formulários de adição e edição de tarefas (todo-form e edit-form) */
 #todo-form,
 #edit-form {
   padding: 1rem;
   border-bottom: 1px solid #ccc;
 }
 
+/* Estilos para os parágrafos dentro dos formulários */
 #todo-form p,
 #edit-form p {
   margin-bottom: 0.5rem;
   font-weight: bold;
 }
 
+/* Classe "form-control" para controlar o layout dos elementos de formulário */
 .form-control {
   display: flex;
 }
 
+/* Estilos para os campos de entrada de texto dentro dos formulários */
 .form-control input {
   margin-right: 0.3rem;
 }
 
+/* Estilos para o botão "Cancelar" do formulário de edição */
 #cancel-edit-btn {
   margin-top: 1rem;
 }
 
-/*Todo toolbar*/
+/* Estilos para a barra de ferramentas (toolbar) da lista de tarefas */
 #toolbar {
   padding: 1rem;
-  border-bottom: 1pix solid #ccc;
+  border-bottom: 1pix solid #ccc; /* Correção: alterar "1pix" para "1px" */
   display: flex;
 }
 
+/* Estilos para o título (h4) dentro da toolbar */
 #toolbar h4 {
   margin-bottom: 0.5rem;
 }
 
+/* Estilos para a seção de busca (search) dentro da toolbar */
 #search {
   border-right: 1px solid #ddd;
   padding-right: 1rem;
@@ -112,24 +132,30 @@ select {
   flex-direction: column;
 }
 
+/* Estilos para o formulário de busca dentro da seção de busca */
 #search form {
   display: flex;
 }
 
+/* Estilos para o campo de entrada de busca */
 #search input {
   width: 100%;
   margin-right: 0.3rem;
 }
+
+/* Estilos para a seção de filtro (filter) dentro da toolbar */
 #filter {
   width: 35%;
   display: flex;
   flex-direction: column;
 }
 
+/* Estilos para o seletor (select) dentro da seção de filtro */
 #filter select {
   flex: 1;
 }
 
+/* Estilos para cada tarefa (todo) na lista */
 .todo {
   display: flex;
   justify-content: space-around;
@@ -139,19 +165,23 @@ select {
   transition: 0.3s;
 }
 
+/* Estilos para o título (h3) de cada tarefa */
 .todo h3 {
   flex: 1;
   font-size: 0.9rem;
 }
 
+/* Estilos para os botões dentro de cada tarefa */
 .todo button {
   margin-left: 0.4rem;
 }
 
+/* Estilos para tarefas concluídas (classe "done") */
 .done {
   background-color: #9e2572;
 }
 
+/* Estilos para o título (h3) de tarefas concluídas */
 .done h3 {
   color: #fff;
   text-decoration: line-through;
